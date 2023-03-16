@@ -8,6 +8,7 @@ const Cart = require('../module/cart')
 
 
 const getProducts = (req,res,next)=>{
+    console.log('Checking')
 
     Products.findAll().then(result=>{
        res.render('shop/productList',{
