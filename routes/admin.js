@@ -20,7 +20,7 @@ router.post('/cart', shopController.getPostCartItems)
 
 router.get('/product-list', shopController.getProducts)
 
-router.get('/checkout', shopController.getCheckout)
+// router.get('/checkout', shopController.getCheckout)
 
 router.get('/orders', shopController.getOrders)
 

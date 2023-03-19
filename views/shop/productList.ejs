@@ -9,7 +9,7 @@
             <img src="<%= product.imageUrl %>" alt="<%= product.value %>" style="width:60%;height:60%;" title="title"/>
             <h3>$<%= product.price %></h3>
             <p><%= product.description %></p>
-            <a class="btn" href="/product/<%= product.id %>" >Detail</a>
+            <a class="btn" href="/product/<%= product._id %>" >Detail</a>
            <%- include('../layouts/add-to-cart.ejs',{product:product})%>
           </div>
     <% } %> <% } else { %>
