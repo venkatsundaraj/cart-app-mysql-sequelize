@@ -22,6 +22,7 @@ class User {
     }
 
     static findUserById(userId){
+        console.log('good')
         const db = getDb()
         return db.collection('users').find({_id:new mongoDb.ObjectId(userId)})
         .next()
